@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Sobre Arrays</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="att7.js"></script>
+</head>
+<body>
+    <header>
+        <div><h1>Atividades</h1></div>
+        <div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="att1.html">ATT1</a></li>
+                    <li><a href="att2.html">ATT2</a></li>
+                    <li><a href="att3.html">ATT3</a></li>
+                    <li><a href="att4.html">ATT4</a></li>
+                    <li><a href="att5.html">ATT5</a></li>
+                    <li><a href="att7.html">ATT7</a></li>
+                    <li><a href="att8.html">ATT8</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Atividades 7</h2>
+            <p>7) Faça um algoritmo que leia os dados digitados pelo usuário em um vetor de 7 elementos
+                e faça a soma destes elementos internos do vetor.
+                Observação: somar todos os elementos internos do vetor, exemplo [1,2,3,4,5,6,7] = 28</p>
+            <h3>Obs: separe os valores por virgula</h3>
+            <input type="text" id="Array1" placeholder="Digite o array 1">
+            <button onclick="ArraySomandoArray()">Calcular</button>
+            <br>
+            <div id="res"></div>
+            <p>Codigo Utilizado:</p>
+            <p>function ArraySomandoArray() {
+                const res = document.getElementById("res");
+                
+                const vl1 = document.getElementById("Array1").value.split(',').map(Number);
+                const somaTotal = vl1.reduce((acc, add) => acc + add)
+            
+            
+                res.innerHTML = `Resultado: [${somaTotal}]`;
+            }
+            </p>
+        </div>
+    </main>
+</body>
+</html>

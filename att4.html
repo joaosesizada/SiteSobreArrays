@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Sobre Arrays</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="att4.js"></script>
+</head>
+<body>
+    <header>
+        <div><h1>Atividades</h1></div>
+        <div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="att1.html">ATT1</a></li>
+                    <li><a href="att2.html">ATT2</a></li>
+                    <li><a href="att3.html">ATT3</a></li>
+                    <li><a href="att5.html">ATT5</a></li>
+                    <li><a href="att6.html">ATT6</a></li>
+                    <li><a href="att7.html">ATT7</a></li>
+                    <li><a href="att8.html">ATT8</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Atividades 4</h2>
+            <p>4) refaça o algoritmo, onde o número escalar a ser realizado a soma é digitado pelo
+                usuário.
+                Observação: vetor1 + (número digitado)</p>
+            <p>Array: [ 1, 2, 3, 4, 5 ]</p>
+            <input type="number" id="NumUser">
+            <button onclick="ArrayMaisNumUser()">Calcular</button>
+            <br>
+            <div id="res"></div>
+            <p>Codigo Utilizado:</p>
+            <p>function ArrayMaisNumUser() {
+                const res = document.getElementById("res")
+                const NumUser = document.getElementById("NumUser").value
+                const vetor1 = [ 1, 2, 3, 4, 5 ]
+            
+                const Multiplicado = vetor1.map(num => num + parseInt(NumUser))
+                res.innerHTML = `Resultado: [${Multiplicado}]`
+            }            
+            </p>
+        </div>
+    </main>
+</body>
+</html>

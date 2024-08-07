@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Sobre Arrays</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="att3.js"></script>
+</head>
+<body>
+    <header>
+        <div><h1>Atividades</h1></div>
+        <div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="att1.html">ATT1</a></li>
+                    <li><a href="att2.html">ATT2</a></li>
+                    <li><a href="att4.html">ATT4</a></li>
+                    <li><a href="att5.html">ATT5</a></li>
+                    <li><a href="att6.html">ATT6</a></li>
+                    <li><a href="att7.html">ATT7</a></li>
+                    <li><a href="att8.html">ATT8</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Atividades 3</h2>
+            <p>3) Faça um algoritmo que faça a soma do escalar 7 de todos os elementos do vetor
+                empregando a lógica do laço “for”, dado o vetor1 = [ 1, 2, 3, 4, 5 ] e apresente na tela para o
+                usuário. Os dados serão inseridos diretamente no código pelo programador, ou seja, não
+                haverá entrada de dados por parte do usuário.</p>
+
+            <p>Observação: vetor1 + 7</p>
+            <p>Array: [ 1, 2, 3, 4, 5 ]</p>
+            <br>
+            <div id="res"></div>
+            <p>Codigo Utilizado:</p>
+            <p>function arrayMais7() {
+                const res = document.getElementById("res")
+            
+                const vetor1 = [ 1, 2, 3, 4, 5 ]
+            
+                const Multiplicado = vetor1.map(num => num + 7)
+                res.innerHTML = `Resultado: [${Multiplicado}]`
+            }
+            arrayMais7()</p>
+        </div>
+    </main>
+</body>
+</html>
